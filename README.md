@@ -1,7 +1,8 @@
 # Personal Site
 
-This is my personal portfolio website. It's in a private repository, so it's not
-like anybody else is going to ever look at this document. Why am I even writing
-it?
+This is my personal "portfolio" website. Right now it just holds a few links to
+my Stack Overflow, GitHub, and resume. Eventually it'll be a real portfolio.
+
+When that will be, however&hellip;
 
 知らない。
