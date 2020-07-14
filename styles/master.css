@@ -1,0 +1,80 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;700&display=swap');
+
+:root {
+  font-family: 'Noto Sans JP', sans-serif;
+  font-size: 16px;
+  color: #101010;
+  background-color: #fafafa;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    color: #fafafa;
+    background-color: #101010;
+  }
+}
+
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  width: 100vw;
+  height: 100vh;
+}
+
+main {
+  background-color: #202020;
+  border-radius: 1em;
+  text-align: center;
+  padding: 3rem;
+}
+
+a { color: inherit; }
+
+h1 { margin: 0 1rem 1rem; }
+p { font-size: 1.2em; margin: 0; }
+p:nth-of-type(2) { font-size: 0.5em; margin-top: 0.5em }
+
+#links {
+  display: flex;
+  flex-flow: row nowrap;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.6em;
+  margin-top: 1.75rem;
+  margin-bottom: 0;
+}
+
+#links div {
+  margin: 0 1em;
+  transition: transform 125ms ease-in-out;
+}
+
+#links div:hover {
+  transform: translateY(-0.1em);
+}
+
+#links div::after {
+  content: "";
+  display: block;
+  height: 0.15em;
+  margin: 0.1em auto 0;
+  background-color: #0061d1;
+  width: 0%;
+  transition: width 125ms ease-in-out;
+}
+
+#links div:hover::after {
+  width: 100%;
+}
+
+#links>:last-child {
+  margin-right: 0;
+}
+
+#links>:first-child {
+  margin-left: 0;
+}
