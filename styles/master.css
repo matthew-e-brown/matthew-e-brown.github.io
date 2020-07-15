@@ -73,10 +73,15 @@ h1 {
 
 #links div {
   margin: 0 1em;
+  position: relative;
+}
+
+#links a {
+  display: block;
   transition: transform 125ms ease-in-out;
 }
 
-#links div:hover {
+#links div:hover a {
   transform: translateY(-0.1em);
 }
 
@@ -84,7 +89,7 @@ h1 {
   content: "";
   display: block;
   height: 0.15em;
-  margin: 0.1em auto 0;
+  margin: 0 auto;
   background-color: #0061d1;
   width: 0%;
   transition: width 125ms ease-in-out;
